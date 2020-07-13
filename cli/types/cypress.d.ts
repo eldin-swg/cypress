@@ -2139,21 +2139,21 @@ declare namespace Cypress {
      *
      * @default {true}
      */
-    failOnStatusCode: boolean
+    failOnStatusCode?: boolean
 
     /**
      * Whether Cypress should automatically retry status code errors under the hood
      *
      * @default {false}
      */
-    retryOnStatusCodeFailure: boolean
+    retryOnStatusCodeFailure?: boolean
 
     /**
      * Whether Cypress should automatically retry transient network errors under the hood
      *
      * @default {true}
      */
-    retryOnNetworkFailure: boolean
+    retryOnNetworkFailure?: boolean
   }
 
   /**
@@ -2191,7 +2191,7 @@ declare namespace Cypress {
      *
      * @default true
      */
-    log: boolean
+    log?: boolean
   }
 
   /**
@@ -2204,7 +2204,7 @@ declare namespace Cypress {
      * @default defaultCommandTimeout
      * @see https://docs.cypress.io/guides/references/configuration.html#Timeouts
      */
-    timeout: number
+    timeout?: number
   }
 
   /**
@@ -2510,15 +2510,15 @@ declare namespace Cypress {
    * Full set of possible options for cy.request call
    */
   interface RequestOptions extends Loggable, Timeoutable, Failable {
-    auth: object
-    body: RequestBody
-    encoding: Encodings
-    followRedirect: boolean
-    form: boolean
-    gzip: boolean
-    headers: object
-    method: HttpMethod
-    qs: object
+    auth?: object
+    body?: RequestBody
+    encoding?: Encodings
+    followRedirect?: boolean
+    form?: boolean
+    gzip?: boolean
+    headers?: object
+    method?: HttpMethod
+    qs?: object
     url: string
   }
 
